@@ -906,6 +906,21 @@ a:hover {
   color: #4e4e4e;
 }
 
+/* Disable hover effects for De Anza box completely */
+.service-box.no-hover .ico-circle {
+  color: inherit;             /* keep original icon/text color */
+  background-color: inherit;  /* keep background neutral */
+  box-shadow: none !important; /* force no green outline */
+  transition: none;           /* optional, remove any hover animation */
+}
+
+.service-box.no-hover:hover .ico-circle {
+  color: inherit;             /* override hover color */
+  background-color: inherit;  /* override hover background */
+  box-shadow: none !important; /* override hover outline */
+  transform: none;            /* prevent scaling/animation if applied */
+}
+
 /*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
