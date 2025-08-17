@@ -961,7 +961,12 @@ a:hover {
   background-color: #fff;
 }
 
-.work-box:hover img {
+.work-box img {
+  transition: none;
+}
+
+/* Only zoom on hover if .zoom-on-hover is present */
+.work-box.zoom-on-hover:hover img {
   transform: scale(1.3);
 }
 
